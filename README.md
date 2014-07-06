@@ -24,7 +24,7 @@ between light level changes and LED updates.
 Note: if the rf-nrf module never becomes READY, try force re-flashing the firmware on the
 Tessel. This fixed the issue on multiple boards for us.
 
-Note: there was a bug in the rf-nrf24 module (magicnums.js line 6) that @SomeoneWeird
+Note: there was a bug in the rf-nrf24 module (magicnums.js line 6) that [@SomeoneWeird](https://github.com/SomeoneWeird)
 fixed with a pull request - attempt to use .forEach on a string did not work on the
 Tessel device, although it works in node.
 
