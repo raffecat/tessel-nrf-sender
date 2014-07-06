@@ -20,3 +20,13 @@ The LED brightness is greater when the received light level is small; i.e. a nig
 Note: the rate of transimit is quite low - the world's slowest light switch -
 because otherwise the RF modules end up with queued messages, causing increasing lag
 between light level changes and LED updates.
+
+Note: if the rf-nrf module never becomes READY, try force re-flashing the firmware on the
+Tessel. This fixed the issue on multiple boards for us.
+
+Note: there was a bug in the rf-nrf24 module (magicnums.js line 6) that @SomeoneWeird
+fixed with a pull request - attempt to use .forEach on a string did not work on the
+Tessel device, although it works in node.
+
+Note: if the 2.4 GHz spectrum is busy or noisy, messages sent via the RF module will
+be lost. Since we send continuous updates, we do not use message retries.
