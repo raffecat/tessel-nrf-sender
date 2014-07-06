@@ -1,0 +1,16 @@
+{
+  "name": "tessel-nrf-sender",
+  "version": "0.1.0",
+  "description": "Send light level via NRF24 module, toggle on sound event",
+  "main": "sender.js",
+  "dependencies": {
+    "rf-nrf24": "^0.8.4",
+    "ambient-attx4": "^0.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RaffeCat",
+  "license": "ISC"
+}
