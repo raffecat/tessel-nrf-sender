@@ -1,6 +1,9 @@
 /* tessel to tessel
  * requires 2 nrf24 modules (and ideally two tessels)
- * transmits light level to receiver device
+ *
+ * Transmits light level to receiver device.
+ * For receiver, see:
+ * https://github.com/SomeoneWeird/tessel-nrf-receiver
  */
 
 var tessel = require('tessel');
